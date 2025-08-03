@@ -1,0 +1,85 @@
+/* General Page Background */
+body {
+  background-color: #f4f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+#main-navigation {
+  background-color: #390281;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* Post List Container */
+#all-posts {
+  margin: 6rem auto;
+  width: 90%;
+  max-width: 65rem;
+}
+
+/* Section Title */
+#all-posts h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2e2e2e;
+  margin-bottom: 3rem;
+}
+
+/* Post Grid */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Post Container */
+.post a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 24rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Post Image */
+.post img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Post Title & Excerpt */
+.post__content h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #390281;
+}
+
+.post__content p {
+  font-size: 0.95rem;
+  color: #555;
+  padding: 0 1rem;
+}

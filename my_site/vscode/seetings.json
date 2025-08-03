@@ -1,0 +1,14 @@
+{
+  "python.pythonPath": "/usr/local/bin/python3.13.3",
+  "window.zoomLevel": 6,
+  "python.languageServer": "Pylance",
+  "files.associations": {
+    "*.html": "html",
+    "templates/*.html": "django-html",
+    "*.txt": "text",
+    "requirements/*.txt": "pip-requirements"
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  }
+}
