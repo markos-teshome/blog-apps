@@ -1,2 +1,2 @@
 # blog-apps
-This Mi My First Django Project
+This is My First Django Project
