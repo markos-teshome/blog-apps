@@ -5,10 +5,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'insecure-default-for-dev-only')
 
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+# Enable DEBUG from environment variable; default True for now to debug
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+
+# Temporarily allow all hosts while debugging
+ALLOWED_HOSTS = ['*']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-ALLOWED_HOSTS = ['markos-teshome-blog.onrender.com']
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
